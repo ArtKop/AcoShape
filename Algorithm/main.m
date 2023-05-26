@@ -8,7 +8,7 @@ httpcommand('TriggedRecording','flag',0);
 httpcommand('StopRecording');
 httpcommand('StartRecording');
 
-TempImage = '1.png';
+TempImage = 'Shape.png';
 
 load('vectorField_RL_2019_P2.mat'); % plate info
 load('NNs.mat');  % neural networks
