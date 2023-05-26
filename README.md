@@ -5,7 +5,7 @@ The results can be found in `movies/`.
 
 **Experiment** | **Simulation**
 ------ | ------
-<img src="Extra/Experiment.gif" width="300" height="200"  /> | <img src="Extra/Simulation.gif" width="300" height="200"  /> 
+<img src="Extra/Experiment.gif" width="300" height="200"  /> | <img src="Extra/Simulation.gif" width="250" height="200"  /> 
 
 
 
