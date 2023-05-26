@@ -8,7 +8,7 @@ httpcommand('TriggedRecording','flag',0);
 httpcommand('StopRecording');
 httpcommand('StartRecording');
 
-TempImage = 'C:\Users\micronano\Desktop\pattern_formation_experiments\1.png';
+TempImage = '1.png';
 
 load('vectorField_RL_2019_P2.mat'); % plate info
 load('NNs.mat');  % neural networks
@@ -106,7 +106,7 @@ while step < num_of_steps
     notes(step) = ID;
     
     % grab an image and track the particles
-    TempImage = strcat('C:\Users\micronano\Desktop\pattern_formation_experiments\',int2str(step+1),'.png');
+    TempImage = strcat(int2str(step+1),'.png');
     httpcommand('GrabImage', 'filename', TempImage);
     pause(0.1);
     frame = imread(TempImage);
