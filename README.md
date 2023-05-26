@@ -5,8 +5,8 @@ The results can be found in `movies/`.
 
 **Experiment** | **Simulation**
 ------ | ------
-<img src="Extra/Experiment.gif" data-canonical-src="Extra/Experiment.gif" width="200" height="200" />  
-| <img src="Extra/Simulation.gif" data-canonical-src="Extra/Simulation.gif" width="200" height="200" /> 
+<img src="Extra/Experiment.gif"  />  
+| <img src="Extra/Simulation.gif"  /> 
 
 
 
