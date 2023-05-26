@@ -15,6 +15,9 @@ If you find this code useful, please consider citing:
 }
 ```
 ## Concept
+
+<img src="extra/Concept.png" width="283" height="212" /> 
+
 The paper proposes the particle assembly method applied to a Chladni plate. The method includes:
 1. Training neural networks (NNs) predicting the likely particle displacement on the plate as follows,
 ```math
