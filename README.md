@@ -1,7 +1,7 @@
 # Programmable assembly of particles on a Chladni plate
 
 ## Results
-The results can be found in `movies/`.
+The results can be found in Supplementary Materials of the paper.
 
 **Experiment** | **Simulation**
 ------ | ------
