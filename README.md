@@ -27,11 +27,11 @@ where $u_n$ is an NN, $n$ is the index of a vibration frequency (1-30 kHz), and 
 
 2. Solving the problem of aligning two sets of points, particles and shape-defining targets,
 ```math
-\arg \min_{\mathbf{R},\mathbf{v},n} \frac{1}{N}\sum\limits_{i=1}^N \lVert \mathbf{R} \mathbf{t}_i + \mathbf{v} - E_{n}(\mathbf{p}_i) \rVert^2 ,
+J = \min_{\mathbf{R},\mathbf{v},n} \frac{1}{N}\sum\limits_{i=1}^N \lVert \mathbf{R} \mathbf{t}_i + \mathbf{v} - E_{n}(\mathbf{p}_i) \rVert^2 ,
 ```
 where $E_{n}(\mathbf{p}) = \mathbf{p} + u_n(\mathbf{p})$ is the expected particle position after executing $n$,  $\mathbf{R}$ is a rotation matrix, $\mathbf{t}$ is a shape-defining target, $\mathbf{v}$ is a translation vector, and $N$ is the number of particles and targets.
 
-The proposed assembly algorithm iteratively minimizes the above-stated objective function by applying a combination of optimization techniques and model-predictive control. See the paper for more details.
+The proposed assembly algorithm iteratively minimizes the above-stated objective function, $J$, by applying a combination of optimization techniques and model-predictive control. See the paper for more details.
 
 ## Results
 All results can be found in Supplementary Materials of the paper and https://zenodo.org/record/7977043.
@@ -53,7 +53,7 @@ All results can be found in Supplementary Materials of the paper and https://zen
 2. Custom server used to operate the camera and D/A converter (not included here)
 
 ## Usage
-1.	[Algorithm](Algorithm) contains the code of the Assembly algorithm (see the pseudocode in Materials and Methods of the paper).
+1.	[Algorithm](Algorithm) contains the code of the assembly algorithm (see the pseudocode in Materials and Methods of the paper).
 2.	[Simulator](Simulator)	contains the simulated version of the algorithm (no hardware/software required except for MATLAB).
 3.	[Data processing/Chladni figures](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Chladni%20figures) contains the code for computing & plotting the Chladni figures and NNs (see Fig. S1 of the paper).
 4.	[Data processing/Nonlinear motion](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Nonlinear%20motion) contains the code for analyzing the spatial nonlinearity of the particle motion (see Fig. 4A and S6 of the paper).
