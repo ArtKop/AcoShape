@@ -31,7 +31,7 @@ where $u_n$ is an NN, $n$ is the index of vibration frequency (1-30 kHz), and $\
 ```
 where $E_{n}(\mathbf{p}) = \mathbf{p} + u_n(\mathbf{p})$ is the expected particle position after executing $n$,  $\mathbf{R}$ is a rotation matrix, $\mathbf{t}$ is a shape-defining target, $\mathbf{v}$ is a translation vector, and $N$ is the number of particles and targets.
 
-The proposed assembly algorithm iteratively minimizes the above-stated objective function by applying a combination of optimization techniques and model-predictive control.
+The proposed assembly algorithm iteratively minimizes the above-stated objective function by applying a combination of optimization techniques and model-predictive control (see the paper for more details).
 
 ## Results
 All results can be found in Supplementary Materials of the paper.
