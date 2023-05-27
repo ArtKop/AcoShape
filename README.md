@@ -53,4 +53,10 @@ All results can be found in Supplementary Materials of the paper.
 2. Server used operate the camera and D/A converter (not included here)
 
 ## Usage
+### Algorithm
+1.	Specify the target shape as a square image (white pixels = shape, black pixels = background) named “Algorithm/Shape.png”
+2.	Set the parameters in lines 46-48 of Algorithm/main.m (see Materials and Methods of the paper for more details)
+3.	Run Algorithm/main.m
+### Data processing
+1. 
 
