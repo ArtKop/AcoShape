@@ -40,6 +40,17 @@ All results can be found in Supplementary Materials of the paper.
 ------ | ------
 <img src="Extra/Experiment.gif" width="390" height="250"  /> | <img src="Extra/Simulation.gif" width="300" height="250"  /> 
 
+## Requirements
+### Hardware
+1. Chladni plate (50 mm × 50 mm × 0.525 mm, silicon)
+2. Camera (ImperX/IGV-B1621C-KC000 with Infinity/InfiniMite Alpha lens)
+3. Piezoelectric actuator (Piezomechanik/PSt, 150/2 × 3/2)
+4. Amplifier (Piezosystems/EPA-104-230)
+5. D/A converter (National Instruments/USB-6363)
+6. Dual-axis goniometer (Thorlabs, GN2/M)
+### Software
+1. MATLAB R2020b
+2. Server used operate the camera and D/A converter (not included here)
 
-
+## Usage
 
