@@ -1,4 +1,4 @@
-The code computes the stochasticity of the particle motion.
+The code analyzes the stochasticity of the particle motion.
 
 <img src="Stochastic_motion.png" width="500" /> 
 
