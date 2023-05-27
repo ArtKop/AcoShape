@@ -53,8 +53,8 @@ All results can be found in Supplementary Materials of the paper and https://zen
 2. Custom server used to operate the camera and D/A converter (not included here)
 
 ## Usage
-1.	[Algorithm](https://github.com/ArtKop/AcoShape/tree/main/Algorithm) contains the code of the Assembly algorithm (see the pseudocode in Materials and Methods of the paper).
-2.	[Simulator](https://github.com/ArtKop/AcoShape/tree/main/Simulator)	contains the simulated version of the algorithm (no hardware/software required except for MATLAB).
+1.	[Algorithm](Algorithm) contains the code of the Assembly algorithm (see the pseudocode in Materials and Methods of the paper).
+2.	[Simulator](Simulator)	contains the simulated version of the algorithm (no hardware/software required except for MATLAB).
 3.	[Data processing/Chladni figures](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Chladni%20figures) contains the code for computing & plotting the Chladni figures and NNs (see Fig. S1 of the paper).
 4.	[Data processing/Nonlinear motion](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Nonlinear%20motion) contains the code for analyzing the spatial nonlinearity of the particle motion (see Fig. 4A and S6 of the paper).
 6.	[Data processing/Stochastic motion](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Stochastic%20motion) contains the code for analyzing the stochasticity of the particle motion (see Fig. 4B, S7, and S8 of the paper).
