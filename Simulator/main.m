@@ -5,11 +5,13 @@ close all
 % Simulator of the assembly algorithm
 
 inputPattern = 'shape.png'; % picture name
+pNum = 50; % number of particles
 
-% load the models
+% Upload the models
 load('vectorField_RL_2019_P2.mat');
 maps = mapFunc;
 
+% Read the shape
 inputPattern = imread(inputPattern);
 pic_size = length(inputPattern);
 BW = im2bw(inputPattern);
@@ -17,7 +19,9 @@ BW = im2bw(inputPattern);
 area = calc_area(B,N,A);
 
 % Create particles
-[X,Y] = meshgrid(100:50:pic_size-100,100:50:pic_size-100);
+X = linspace(0+pic_size*0.1,pic_size-pic_size*0.1,sqrt(pNum));
+Y = X;
+[X,Y] = meshgrid(X,Y);
 curPos = [X(:),Y(:)];
 particle_num = length(curPos);
 curPos = curPos / pic_size;
@@ -95,7 +99,6 @@ while step < num_of_steps
         dens = length(filt_curPos) / area; % particle density
         tarPos = polygonizer(BW,dens,B,N,A) / pic_size;
         tarPos = convert_y(tarPos);
-    %   tarPos = assigner(filt_curPos,tarPos);
         tarPos = (opt_U * tarPos' + opt_r)';
         tarPos = translate_to_center(tarPos,curPos);
     end
@@ -112,7 +115,7 @@ ylabel('Cost')
 
 % finalize the recording
 writerObj = VideoWriter(strcat(date,'.avi')); % name of the video is 'current date'.avi
-writerObj.FrameRate = 100; % 10 fps
+writerObj.FrameRate = 100;
 writerObj.Quality = 50;
 open(writerObj);
 % write the frames to the video
