@@ -23,7 +23,7 @@ The paper proposes the particle assembly method applied to a Chladni plate. The 
 ```math
 \Delta \hat{\mathbf{p}} = u_n(\mathbf{p}),
 ```
-where $u_n$ is an NN, $n$ is the index of vibration frequency (1-30 kHz), and $\mathbf{p}$ is the particle position on the plate.
+where $u_n$ is an NN, $n$ is the index of a vibration frequency (1-30 kHz), and $\mathbf{p}$ is the particle position on the plate.
 
 2. Solving the problem of aligning two sets of points, particles and shape-defining targets,
 ```math
