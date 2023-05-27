@@ -31,10 +31,10 @@ where $u_n$ is an NN, $n$ is the index of vibration frequency (1-30 kHz), and $\
 ```
 where $E_{n}(\mathbf{p}) = \mathbf{p} + u_n(\mathbf{p})$ is the expected particle position after executing $n$,  $\mathbf{R}$ is a rotation matrix, $\mathbf{t}$ is a shape-defining target, $\mathbf{v}$ is a translation vector, and $N$ is the number of particles and targets.
 
-The proposed assembly algorithm iteratively minimizes the above-stated objective function by applying a combination of optimization techniques and model-predictive control (see the paper for more details).
+The proposed assembly algorithm iteratively minimizes the above-stated objective function by applying a combination of optimization techniques and model-predictive control. See the paper for more details.
 
 ## Results
-All results can be found in Supplementary Materials of the paper.
+All results can be found in Supplementary Materials of the paper and https://zenodo.org/record/7977043.
 
 **Experiment** | **Simulation**
 ------ | ------
@@ -50,6 +50,11 @@ All results can be found in Supplementary Materials of the paper.
 6. Dual-axis goniometer (Thorlabs, GN2/M)
 ### Software
 1. MATLAB R2020b
-2. Server used operate the camera and D/A converter (not included here)
+2. Server used to operate the camera and D/A converter (not included here)
 
 ## Usage
+1.	[Algorithm](https://github.com/ArtKop/AcoShape/tree/main/Algorithm) contains the code of the Assembly algorithm (see the pseudocode in Materials and Methods of the paper).
+2.	[Simulator](https://github.com/ArtKop/AcoShape/tree/main/Simulator)	contains the simulated version of the algorithm (no hardware/software is required except for MATLAB).
+3.	[Data processing/Chladni figures](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Chladni%20figures) contains the code for computing & plotting the Chladni figures and NNs (see Fig. S1 of the paper).
+4.	[Data processing/Nonlinear motion](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Nonlinear%20motion) contains the code for analyzing the nonlinearity of the particle motion (see Fig. 4A and S6 of the paper).
+6.	[Data processing/Stochastic motion](https://github.com/ArtKop/AcoShape/tree/main/Data%20processing/Stochastic%20motion) contains the code for analyzing the stochasticity of the particle motion (see Fig. 4B, S7, and S8 of the paper).
